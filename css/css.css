@@ -1,0 +1,79 @@
+.nom{
+    height: 24.5%;
+    width: 81%;
+    color:white;
+    font-style: italic;
+    font-size: 100%;
+    background-color:rgb(163, 190, 247) ;
+    border : solid rgb(163, 190, 247);
+    border-radius: 10px;
+  
+    position: absolute;
+    right:0;
+    
+    
+    
+}
+.nom > h1,h2{
+    width: 80%;
+}
+.menu{
+    margin-top: 6px;
+    height: 100%;
+    width: 14%;
+    background-color:rgb(163, 190, 247) ;
+    border : solid rgb(163, 190, 247);
+    border-radius: 10px;
+}
+img{
+    
+    border :3px solid rgb(163, 190, 247);
+    border-radius: 10px;
+    height: 25%;
+    width: 14%;
+    
+}
+.info_per{
+    
+    font-size:100%;
+    font-style: italic;
+    color:blue;
+    right:15;
+    color:white;
+    position: absolute;
+}
+.foot{
+    z-index: 99;
+    color:white;
+    font-size: auto;
+    padding-left: 30%;
+    background-color:rgb(163, 190, 247) ;
+    border :3px solid rgb(163, 190, 247);
+    border-radius: 10px;
+    height: 50%;
+    width: 70%;
+    margin-top: 5px;
+    z-index: 99;
+}
+.foot>a{
+    font-style: unset;
+}
+.formation::-webkit-scrollbar {
+    display: none;
+  }
+.formation{
+    height: 100%;
+    width: 75%;
+    overflow-y: scroll;
+    font-size: auto;
+    color:rgb(163, 190, 247) ;
+    position: absolute;
+    top:30%;
+    left :25%;
+
+    -ms-overflow-style: none;  
+  scrollbar-width: none; 
+}
+ul{
+    color:black;
+}
