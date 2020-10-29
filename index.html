@@ -1,7 +1,7 @@
 <IDOCTYPE html> 
     <html tang= "fr"> 
     <head> 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/fontawesome.min/css">
+        
         <link href="css/css.css" rel="stylesheet">
         <link href="css/respo.css" rel="stylesheet">
         <meta charset="uff-8">
@@ -10,17 +10,20 @@
           <meta name="descnption" content="A propos de moll"> 
           <meta name="keywords" content= "web,developer,resume" I> 
           <meta name="author" content="Mon nom"> 
+          <script src="https://js.cx/libs/animate.js"></script>
           <meta name="viewport"content="width=device-width, initial-scale=1"> 
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
           
           <!--[if It IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/htm15.js"></script> <![endif]-->
-
+          
     </head> <body> 
        
         <header class="page-header">
             <div >
                 <div class="nom">
                     <h1><b>SAIDI Soufiane</b></h1>
-                    <div itemscope itemtype="https://schema.org/Book">  <span itemprop="name"> Developpeur</span>  </div>
+                    
 
                    
                 </div>
@@ -34,34 +37,108 @@
             <img src="/Users/user/Desktop/all_documents/document_necessaire/saidi_2.jpeg"/>
             
         </header>
+        <div class="home">
         <div class="menu">
+            <span class="material-icons" style="font-size:5vw;">
+                laptop_mac
+                </span></br>
+                Systemes d'exploitation</br>
+                    MAC-OS</br>
+                    LINUX</br>
+                </br></br>
+                    
+                        <span class="material-icons" style="font-size:5vw;">
+                            face
+                            </span></br>
+                            CENTRES D’INTERET</br>
+                            Voyage</br>
+                            Sport</br>      
+                            Lecture</br> 
+                        </br>
+                        <span class="material-icons" style="font-size:5vw;">
+                            assignment_ind
+                            </span> </br>
+                        Soft--Skills</br>
+                        <script>
+                            var tab=['Rigueur','Créativité','Travail déquipe'];
+                            var table=[3,4,2];
+                            for( var i=0;i< table.length;i++){
+                                document.write(tab[i]);
+                            for( j=0;j<table[i];j++){
+                                
+                                document.write(" <span class='material-icons' style='color: black;size:5vw'>grade</span>");
             
+            
+                                  
+                            }
+                            document.write("</br>");
+                        }
+                        </script>
+                        
+                    </br></br>
+                    <div class="cont" style="display: flex;">
+                    <div class="vl" style="margin-right:4px ;"></div>
+                    <div class="vll" style="display: flex; " >
+                   
+                        <script>
+                            for( var i=0;i< table.length;i++){
+                                document.write("<div style='width:5vw;margin-right:1vw'>");
+                            for( j=0;j<table[i];j++){
+                                
+                               
+                                document.write("<div class='caro' style='width: 5vw;height: 5vw; background-color: white ;' ></div>");
+            
+                                  
+                            }
+
+                            document.write("<p style='font-size:1.5vw;transform:rotate(180deg);'>"+tab[i]+"</p></div>");
+                        }
+                         
+                        </script>
+                    </div>
+                    </div>
+                    <div class="vl2"></div>
+                
         </div>
         <div class="formation">
         <div>
+           
             
             <h2>Formation </h2>
             <ul>
-                <li>BAC</li>
-                <ul>
+                <li class="bac" onclick="dis('hide1'); hide('hide2','hide3','hide4','hide5','hide6'); ">
+                <div class="tooltip" id="bac">BAC
+                    <span class="tooltiptext">appuier pour plus de details sur BAC</span>
+                </div>
+                    </li>
+                
+                <ul id="hide1"   >
                     <li>2014/2015</li>
                     <li>SMA-A</li>
                     <li>BIEN</li>
                 </ul>
-                <li>DEUG</li>
-                <ul>
+                <li class="DEUG" onclick="dis('hide2'); hide('hide1','hide3','hide4','hide5','hide6');"><div class="tooltip">DEUG
+                    <span class="tooltiptext">appuier pour plus de details sur DEUG</span>
+                  </div></li>
+                <ul id="hide2">
                     <li>2016/2017</li>
                     <li>SMIA</li>
                     <li>BIEN</li>
                 </ul>
-                <li>LICENCE</li>
-                <ul>
+                <li class="LICENCE" onclick="dis('hide3'); hide('hide2','hide1','hide4','hide5','hide6');"><div class="tooltip">LICENCE
+                    <span class="tooltiptext">appuier pour plus de details sur LICENCE</span>
+                </div>
+                    </li>
+                </li>
+                <ul id="hide3">
                     <li>2018/2019</li>
                     <li>SMI</li>
                     <li>BIEN</li>
                 </ul>
-                <li>MATSER</li>
-                <ul>
+                <li class="MASTER" onclick="dis('hide4'); hide('hide2','hide3','hide1','hide5','hide6');"><div class="tooltip">MASTER
+                    <span class="tooltiptext">appuier pour plus de details sur MASTER</span>
+                </div></li>
+                <ul id="hide4">
                     <li>2020/2021</li>
                     <li>DOSI-M2I</li>
                     <li>BIEN</li>
@@ -71,14 +148,18 @@
         <div>
             <h2>Stage </h2>
             <ul>
-                <li>Minister interieur</li>
-                <ul>
+                <li class="ST1" onclick="dis('hide5'); hide('hide2','hide3','hide4','hide1','hide6');"><div class="tooltip">STAGE Minister Interieur
+                    <span class="tooltiptext">appuier pour plus de details sur STAGE</span>
+                </div></li>
+                <ul id="hide5">
                     <li>deux mois</li>
                     <li>2018</li>
                     <li>application de gestion de parking </li>
                 </ul>
-                <li>ABS (COCA)</li>
-                <ul>
+                <li class="ST2" onclick="dis('hide6'); hide('hide2','hide3','hide4','hide5','hide1');"><div class="tooltip">Stage ABS
+                    <span class="tooltiptext">appuier pour plus de details sur STAGE</span>
+                </div></li>
+                <ul id="hide6">
                     <li>un mois</li>
                     <li>2018</li>
                     <li>application de gestion de stock</li>
@@ -87,6 +168,7 @@
             </ul>
         </div>
     </div>
+</div>
        
 
             <div class="foot"> 
@@ -101,5 +183,42 @@
                     <p>© 2020 SAIDI</p>
                 </footer>
             </div>
+
+
+
+            <script>
+           
+                function dis(c) {
+                    if(document.getElementById(c).style.display =="block"){
+                        document.getElementById(c).style.display ="none";
+                    }else{
+                        document.getElementById(c).style.display ="block";
+                        
+                    }
+                }
+                function hide(c1,c2,c3,c4,c5) {
+                    document.getElementById(c1).style.display ="none";
+                    document.getElementById(c2).style.display ="none";
+                    document.getElementById(c3).style.display ="none";
+                    document.getElementById(c4).style.display ="none";
+                    document.getElementById(c5).style.display ="none";
+                }
+
+
+  
+            </script>
+
+            
+            
+            
+                
+                
+             
+                
+                
+
+
+
         </body> 
+        
 </html>
